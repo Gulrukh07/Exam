@@ -20,7 +20,7 @@ async def lang_handler(message:Message, state:FSMContext):
     user = await User.get(id_=chat_id)
     if not user:
         await User.create(id=chat_id, tg_first_name=tg_first_name, username=username)
-        await message.answer("Please choose the langage\n"
+        await message.answer("Please choose the language\n"
                              "Iltimos, tilni tanlang\n"
                              "Пожалуйста, выберите язык",
                              reply_markup=language_button())

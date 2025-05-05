@@ -37,5 +37,5 @@ async def fast_food_panel(message:Message, state:FSMContext):
 @user_router.message(Food.res_menu, F.text == __(salats_text))
 async def hot_meal_panel(message:Message, state:FSMContext):
     await state.set_state(Food.hot_meal)
-    await message.answer(_("🥗 Hor Meals"), reply_markup=hot_meal_menu())
+    await message.answer(_("🥗 Hot Meals"), reply_markup=hot_meal_menu())
 

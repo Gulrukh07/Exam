@@ -5,11 +5,6 @@ from db import  Base
 from db.utils import CreatedModel
 
 
-class GenderType(PyEnum):
-    MAN = 'man'
-    WOMAN = 'woman'
-
-
 class User(CreatedModel):
     id: Mapped[int] = mapped_column(BIGINT, primary_key=True, unique=True)
     tg_first_name: Mapped[str]
