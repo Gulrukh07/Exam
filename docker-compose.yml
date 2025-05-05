@@ -1,0 +1,23 @@
+services:
+  pg_service:
+    image: postgres:latest
+    container_name: exam_pg
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  bot:
+    build: .
+    image: exam_bot:latest
+    container_name: exam_bot_con
+    restart: always
+    command: python3 main.py
+    depends_on:
+      - pg_service
+
+volumes:
+  pgdata:

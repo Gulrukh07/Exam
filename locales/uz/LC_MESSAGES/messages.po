@@ -1,0 +1,44 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-05-05 11:00+0500\n"
+"PO-Revision-Date: 2025-05-05 11:01+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: bot/handlers/main_handler.py:28 bot/handlers/main_handler.py:33
+msgid "🏠Welcome to the main menu"
+msgstr "🏠 Asosiy menyu"
+
+#: bot/handlers/user.py:15
+msgid "Press admin button to contact us"
+msgstr "Biz bilan bog'lanish uchun admin tugmasiga bosing"
+
+#: bot/handlers/user.py:24
+msgid "🍽 Restaurant Menu"
+msgstr "🍽 Restoran menyusi"
+
+#: bot/handlers/user.py:30
+msgid "🥗 Salats"
+msgstr "🥗 Salatlar"
+
+#: bot/handlers/user.py:35
+msgid " Fast Food"
+msgstr "Fast Food"
+
+#: bot/handlers/user.py:40
+msgid "🥗 Hor Meals"
+msgstr "🥗 Issiq taomlar"
+
