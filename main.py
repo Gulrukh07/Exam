@@ -18,7 +18,7 @@ async def all_middleware():
 
 async def main() -> None:
     i18n = I18n(path="locales", default_locale='en')
-    bot = Bot(token=Env.bot.TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp.update.middleware(FSMI18nMiddleware(i18n=i18n))
 
     await dp.start_polling(bot)
